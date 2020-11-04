@@ -201,7 +201,7 @@ content: url("../img/phone.png");
   align-items: center;
   justify-content: space-around;
   background-color: white;
-  padding: 0 auto;
+  padding: 0;
   box-shadow: inset 0 -5px #858da9;
 }
 
@@ -279,7 +279,7 @@ content: url("../img/phone.png");
 }
 
 .connect_form input {
-  width: 100%
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -309,18 +309,28 @@ content: url("../img/phone.png");
 /* how do we work */
 
 .how_we_work {
-  display: flex;
-  justify-content: center;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+
 }
 
 .our_advantage {
   background-image: url('../img/howdoworkbackground.png');
   background-repeat: no-repeat;
+  grid-column: 1/7;
   display: flex;
+  justify-content: flex-end;
 }
 
 .list_of_benefits {
-  margin-left: 70px;
+  width: 500px;
+}
+
+.work-criteria {
+  width: 100%;
+  height: 100%;
 }
 
 .list_of_benefits h2 {
@@ -348,26 +358,43 @@ content: url("../img/phone.png");
   position: relative;
 }
 
-.list_of_benefits li::before {
+.list_of_benefits li:last-child {
+  margin-bottom: 0;
+}
+
+.performance-criterion::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 46px;
+
   position: absolute;
+  left: 0;
   top: 5px;
-  left: -3px;
 }
 
-.list_of_benefits li:first-child::before {
-  content: url('../img/task_complete1.png');
+.data-collection {
+  background-image: url('../img/task_complete1.png');
+  background-repeat: no-repeat;
 }
 
-.list_of_benefits li:nth-child(2)::before {
-  content: url('../img/task_complete2.png');
+.data-analysis {
+  background-image:  url('../img/task_complete2.png');
+  background-repeat: no-repeat;
 }
 
-.list_of_benefits li:last-child::before {
-  content: url('../img/task_complete3.png');
+.the-best-solution {
+  background-image: url('../img/task_complete3.png');
+  background-repeat: no-repeat;
+}
+
+.video_how_we_work {
+  grid-column: 7/13;
 }
 
 .video_how_we_work img{
   width: 100%;
+  height: 100%
 }
 
 /* services */
@@ -556,7 +583,7 @@ content: url("../img/phone.png");
   display: grid;
   grid-template: "aboutteam aboutteam aboutteam aboutteam staff staff staff staff staff staff staff staff" 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
-  align-items: top;
+  align-items:flex-start;
   width: 100%;
 }
 
@@ -649,7 +676,7 @@ content: url("../img/phone.png");
 
 .newsboard {
   display: grid;
-  grid-template-columns: (12,1fr);
+  grid-template-columns: repeat(12,1fr);
   grid-column-gap: 10px
 }
 
@@ -840,7 +867,7 @@ content: url("../img/phone.png");
 .footer-navigation-columns p,
 .footer-navigation-columns a {
   font-family: Rubik, Arial, sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   color: #d9d9d9;
 }
@@ -870,7 +897,7 @@ content: url("../img/phone.png");
 
 .footer-form button {
   font-family: Rubik, Arial, sans-serif;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 15px;
   color: white;
   background-color: transparent;
