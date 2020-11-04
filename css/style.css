@@ -3,12 +3,12 @@ html,body {
   margin: 0;
 }
 
-ul{
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-a{
+a {
   text-decoration: none;
 }
 
@@ -68,7 +68,6 @@ a{
 /* header */
 
 .header {
-  /* background-color: white; */
   background-color: white;
 }
 
@@ -84,6 +83,7 @@ a{
 
 .navigation-link {
   padding: 35px 10px;
+  transition: background 0.5s;
 }
 
 .navigation-link a {
@@ -94,6 +94,7 @@ a{
   text-transform: uppercase;
   color: #242a5a;
   background-color: #ffffff;
+  transition: background 0.5s;
 }
 
 .navigation-link:hover a {
@@ -103,6 +104,8 @@ a{
 
 .navigation-link:hover {
   background-color: #242a5a;
+  cursor: pointer;
+
 }
 
 /* introduction */
@@ -145,18 +148,6 @@ a{
   color: #131f4f;
 }
 
-/* .contacts li:first-child::before {
-content: url("../img/clock.png");
-}
-
-.contacts li:nth-child(2)::before {
-content: url("../img/mail.png");
-}
-
-.contacts li:last-child::before {
-content: url("../img/phone.png");
-} */
-
 .introduction-image {
   display: block;
   width: 470px;
@@ -189,10 +180,15 @@ content: url("../img/phone.png");
   border: 2px solid white;
   padding: 10px 35px;
   margin-left: 20px;
+  transition: background 0.5s;
 }
 
 .performance a:first-of-type {
   margin-left: 10px;
+}
+
+.performance a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .sponsors-links {
@@ -543,7 +539,7 @@ content: url("../img/phone.png");
 
 .achievements_table tr td,
 .achievements_table td th{
-  width: 270px;
+  width: 290px;
 }
 
 .achievements_table tr td:not(:last-child),
@@ -631,22 +627,23 @@ content: url("../img/phone.png");
   transform: scale(1);
 }
 
-.eployee-info {
-  width: 235px;
+.employee-info {
+  width: 100%;
+  max-width: 235px;
   position: absolute;
   bottom: 35px;
 }
 
-.eployee-info h3 {
+.employee-info h3 {
   color: white;
 }
 
-.eployee-info p {
+.employee-info p {
   color: #c4c4c4;
 }
 
-.eployee-info h3,
-.eployee-info p {
+.employee-info h3,
+.employee-info p {
   margin: 0;
   padding: 10px 20px;
   text-align: center;
