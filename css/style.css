@@ -63,6 +63,13 @@ a {
   margin: 0;
   padding: 10px 20px;
   background-color: #0c245d;
+  transition: border,color,background 0.5s;
+}
+
+.button-learn-more:hover {
+  color: #0c245d;
+  background-color: white;
+  border: 1px solid #0c245d;
 }
 
 /* header */
@@ -105,7 +112,6 @@ a {
 .navigation-link:hover {
   background-color: #242a5a;
   cursor: pointer;
-
 }
 
 /* introduction */
@@ -165,6 +171,7 @@ a {
 }
 
 .performance p {
+  line-height: 25px;
   font-family: Rubik, Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -261,7 +268,7 @@ a {
 }
 
 .our_awards_cell:not(:first-child) {
-  padding-left: 100px;
+  padding-left: 90px;
 }
 
 .connect_form {
@@ -300,6 +307,17 @@ a {
   font-size: 17px;
   color: #082362;
   background-color: #ffffff;
+  cursor: pointer;
+  transition: border, background-color  0.5s;
+}
+
+.connect_form button:hover {
+  border: 3px solid black;
+}
+
+.connect_form button:active {
+  color: #ffffff;
+  background-color: #082362;
 }
 
 /* how do we work */
@@ -315,6 +333,7 @@ a {
 .our_advantage {
   background-image: url('../img/howdoworkbackground.png');
   background-repeat: no-repeat;
+  background-color: #082362;
   grid-column: 1/7;
   display: flex;
   justify-content: flex-end;
@@ -402,6 +421,7 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   position: relative;
 }
 
@@ -418,16 +438,16 @@ a {
 }
 
 .services-header h2::after {
-    content: url(../img/blue-separator.png);
-    position: absolute;
-    right: -25px;
+  content: url(../img/blue-separator.png);
+  position: absolute;
+  right: -25px;
 }
 
 /* .services_title h2::after {
-  content: url('../img/separator.png');
-  position: relative;
-  top: 5px;
-  left: 55px;
+content: url('../img/separator.png');
+position: relative;
+top: 5px;
+left: 55px;
 } */
 
 .services-header p{
@@ -527,6 +547,7 @@ a {
 .achievements {
   background-image: url('../img/achievementsbackground.png');
   background-position: center;
+  background-color: #082362;
   background-repeat: no-repeat;
   padding: 65px 0;
 }
@@ -691,7 +712,7 @@ a {
 .newsboard {
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-column-gap: 10px
+  grid-column-gap: 20px;
 }
 
 .newscard {
@@ -767,9 +788,13 @@ a {
   color: #6b6b6b;
 }
 
-.happymomentsimages img {
+.happymomentsimage {
   width: 100%;
   height: auto;
+}
+
+.grayimage {
+  filter: grayscale(100%);
 }
 
 .happymomentsimages {
@@ -805,13 +830,13 @@ a {
   grid-area: img6;
 }
 
-.filter {
+.filter-list {
   display: flex;
   justify-content: flex-end;
-  padding: 40px;
+  padding: 40px 0;
 }
 
-.filter a {
+.filter-list {
   font-family: Rubik, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -819,11 +844,15 @@ a {
   transition: transform 1s;
 }
 
-.filter li:not(:last-child) {
+.filter-list li:not(:last-child) {
   padding-right: 30px;
 }
 
-.filter li:hover a{
+.filter:hover {
+  cursor: pointer;
+}
+
+.filter-active {
   color: #0c245d;
 }
 
@@ -842,6 +871,10 @@ a {
 
 .footer-navigation-column {
   width: 100%;
+}
+
+.footer-navigation-column a:hover {
+  color: #36BFA9;
 }
 
 .footer-navigation-column:first-child {
@@ -892,6 +925,16 @@ a {
 
 .contact-links li {
   padding: 10px;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  border-radius: 50%;
+  transition: border, background 0.5s;
+}
+
+.contact-links li:hover {
+  background-color: #035B6E;
+  border-radius: 50%;
 }
 
 .footer-form p {
@@ -907,6 +950,7 @@ a {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #a3a3a3;
+  color: white;
 }
 
 .footer-form button {
