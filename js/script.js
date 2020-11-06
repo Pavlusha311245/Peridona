@@ -1,7 +1,5 @@
 let filterButton = document.querySelectorAll('.filter');
 let images = document.querySelectorAll('.happymomentsimage');
-console.log(images);
-console.log(filterButton);
 
 function clearFilter () {
   for (let i = 0; i < filterButton.length; i++) {

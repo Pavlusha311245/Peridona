@@ -237,6 +237,7 @@ a {
 }
 
 .our_uniqueness p {
+  line-height: 26px;
   font-family: Rubik, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -290,7 +291,7 @@ a {
 
 .connect_form textarea {
   resize: none;
-  height: 80px;
+  height: 130px;
 }
 
 .connect_form input,
@@ -301,14 +302,13 @@ a {
 .connect_form button {
   margin: 35px 0;
   width: 180px;
-  height: 50px;
+  height: 57px;
   font-family: Rubik, Arial, sans-serif;
   font-weight: 500;
   font-size: 17px;
   color: #082362;
   background-color: #ffffff;
   cursor: pointer;
-  transition: border, background-color  0.5s;
 }
 
 .connect_form button:hover {
@@ -318,6 +318,7 @@ a {
 .connect_form button:active {
   color: #ffffff;
   background-color: #082362;
+  cursor: progress;
 }
 
 /* how do we work */
@@ -443,13 +444,6 @@ a {
   right: -25px;
 }
 
-/* .services_title h2::after {
-content: url('../img/separator.png');
-position: relative;
-top: 5px;
-left: 55px;
-} */
-
 .services-header p{
   display: block;
   width: 100%;
@@ -466,7 +460,7 @@ left: 55px;
 }
 
 .service:not(:nth-child(3n+3)) {
-  margin: 0 0 30px 0;
+  margin-right: 0;
 }
 
 .service h3,
@@ -788,11 +782,6 @@ left: 55px;
   color: #6b6b6b;
 }
 
-.happymomentsimage {
-  width: 100%;
-  height: auto;
-}
-
 .grayimage {
   filter: grayscale(100%);
 }
@@ -806,27 +795,33 @@ left: 55px;
   grid-row-gap: 30px;
 }
 
-.happymomentsimages img:first-child {
+.happymomentsimage {
+  width: 100%;
+  height: auto;
+  transition: filter 0.5s;
+}
+
+.happymomentsimage:first-child {
   grid-area: img1;
 }
 
-.happymomentsimages img:nth-child(2) {
+.happymomentsimage:nth-child(2) {
   grid-area: img2;
 }
 
-.happymomentsimages img:nth-child(3) {
+.happymomentsimage:nth-child(3) {
   grid-area: img3;
 }
 
-.happymomentsimages img:nth-child(4) {
+.happymomentsimage:nth-child(4) {
   grid-area: img4;
 }
 
-.happymomentsimages img:nth-child(5) {
+.happymomentsimage:nth-child(5) {
   grid-area: img5;
 }
 
-.happymomentsimages img:last-child {
+.happymomentsimage:last-child {
   grid-area: img6;
 }
 
@@ -960,6 +955,13 @@ left: 55px;
   color: white;
   background-color: transparent;
   border: none;
+}
+
+.footer-form button:hover {
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-copyright {
