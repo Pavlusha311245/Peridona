@@ -34,6 +34,7 @@ a {
 
 .main-title {
   margin: 45px 0;
+
   font-family: Rubik, Arial, sans-serif;
   font-weight: 700;
   font-size: 60px;
@@ -44,6 +45,7 @@ a {
   font-family: Rubic, Arial, sans-serif;
   font-weight: 700;
   font-size: 36px;
+
   width: 100%;
 }
 
@@ -59,16 +61,21 @@ a {
   font-family: Rubik, Arial, sans-serif;
   font-size: 17px;
   font-weight: 500;
+
   color: white;
-  margin: 0;
-  padding: 10px 20px;
   background-color: #0c245d;
+
+  margin: 0;
+
+  padding: 10px 20px;
+
   transition: border,color,background 0.5s;
 }
 
 .button-learn-more:hover {
   color: #0c245d;
   background-color: white;
+
   border: 1px solid #0c245d;
 }
 
@@ -90,6 +97,7 @@ a {
 
 .navigation-link {
   padding: 35px 10px;
+
   transition: background 0.5s;
 }
 
@@ -99,8 +107,10 @@ a {
   font-size: 15px;
   font-kerning: normal;
   text-transform: uppercase;
+
   color: #242a5a;
   background-color: #ffffff;
+
   transition: background 0.5s;
 }
 
@@ -111,6 +121,7 @@ a {
 
 .navigation-link:hover {
   background-color: #242a5a;
+
   cursor: pointer;
 }
 
@@ -118,25 +129,30 @@ a {
 
 .introduction {
   background-image: url('../img/headerbackground.png');
+  /* background-color: #082362; */
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .greeting {
   display: flex;
+
   margin-top: 145px;
 }
 
 .contact_us {
   margin-left: auto;
+
   width: 788px;
   height: 76px;
+
   background: url(../img/contactbar.png);
   background-repeat: no-repeat;
 }
 
 .contacts {
   height: inherit;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,11 +167,13 @@ a {
   font-family: Rubik, Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
+
   color: #131f4f;
 }
 
 .introduction-image {
   display: block;
+
   width: 470px;
 }
 
@@ -175,6 +193,7 @@ a {
   font-family: Rubik, Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
+
   padding-bottom: 50px;
 }
 
@@ -182,11 +201,15 @@ a {
   font-family: Rubik, Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
+
   color: white;
+
   border-radius: 10px;
   border: 2px solid white;
+
   padding: 10px 35px;
   margin-left: 20px;
+
   transition: background 0.5s;
 }
 
@@ -200,15 +223,36 @@ a {
 
 .sponsors-links {
   height: 123px;
+
   display: flex;
   align-items: center;
   justify-content: space-around;
+
   background-color: white;
+
   padding: 0;
-  box-shadow: inset 0 -5px #858da9;
+
 }
 
 .sponsors-links li {
+  max-width: 175px;
+  width: 100%;
+  height: 123px;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background 0.5s;
+
+  box-shadow: inset 0 -5px #858da9;
+}
+
+.sponsors-links li:hover {
+  box-shadow: inset 0 -5px #082362;
+
+  background-color: rgba(31,144,224,0.3);
 }
 
 /* about_business */
@@ -217,11 +261,13 @@ a {
   display: grid;
   grid-template-columns: repeat(12,1fr);
   align-items: center;
+
   padding: 120px 0;
 }
 
 .our_uniqueness {
   grid-column: 1/6;
+
   width: 100%;
   height: auto;
 }
@@ -256,7 +302,9 @@ a {
   font-family: Rubik, Arial, sans-serif;
   font-weight: bold;
   font-size: 24px;
+
   color: #082362;
+
   text-align: center;
 }
 
@@ -264,7 +312,9 @@ a {
   font-family: Rubik, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
+
   color: #6e6e6e;
+
   text-align: left;
 }
 
@@ -274,23 +324,30 @@ a {
 
 .connect_form {
   grid-column: 7/12;
+
   width: 100%;
   min-height: 450px;
+
   display: flex;
   flex-direction: column;
+
   background-color: #082362;
+
   padding: 0 30px;
 }
 
 .connect_form input {
   width: 100%;
   height: 50px;
+
   margin-bottom: 20px;
+
   box-sizing: border-box;
 }
 
 .connect_form textarea {
   resize: none;
+
   height: 130px;
 }
 
@@ -301,13 +358,17 @@ a {
 
 .connect_form button {
   margin: 35px 0;
+
   width: 180px;
   height: 57px;
+
   font-family: Rubik, Arial, sans-serif;
   font-weight: 500;
   font-size: 17px;
+
   color: #082362;
   background-color: #ffffff;
+
   cursor: pointer;
 }
 
@@ -325,7 +386,9 @@ a {
 
 .how_we_work {
   max-width: 1920px;
+
   margin: 0 auto;
+
   display: grid;
   grid-template-columns: repeat(12,1fr);
 
@@ -335,7 +398,9 @@ a {
   background-image: url('../img/howdoworkbackground.png');
   background-repeat: no-repeat;
   background-color: #082362;
+
   grid-column: 1/7;
+
   display: flex;
   justify-content: flex-end;
 }
@@ -369,9 +434,10 @@ a {
 }
 
 .list_of_benefits li {
-  padding-left: 80px;
-  margin-bottom: 50px;
   position: relative;
+
+  margin-bottom: 50px;
+  padding-left: 80px;
 }
 
 .performance-criterion::before {
@@ -413,17 +479,19 @@ a {
 
 .our_services {
   background-image: url('../img/services_background.png');
-  background-position: center;
+  background-color: #f5f5f5;
+  background-position: right bottom;
   background-repeat: no-repeat;
+
   padding: 130px 0 95px 0;
 }
 
 .services {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  position: relative;
 }
 
 .services-header {
@@ -433,28 +501,39 @@ a {
 }
 
 .services-header h2 {
-  grid-column: 1/5;
   width: 320px;
-  position: relative;
+
+  grid-column: 1/5;
 }
 
-.services-header h2::after {
-  content: url(../img/blue-separator.png);
+.services-header p::before {
   position: absolute;
-  right: -25px;
+  top: -5px;
+  left: -25px;
+
+  content: url(../img/blue-separator.svg);
 }
 
 .services-header p{
+  line-height: 24px;
+
   display: block;
+
   width: 100%;
+
   grid-column: 5/13;
+
+  position: relative;
 }
 
 .service {
   width: 280px;
+
   padding: 30px 40px;
   margin: 0 30px 30px 0;
+
   background-color: #ffffff;
+
   transition-duration: 0.3s;
   transition-property: background-color, color;
 }
@@ -472,30 +551,41 @@ a {
 .services-header p {
   font-weight: 400;
   font-size: 14px;
+
   color: #6b6b6b;
 }
 
 .service-title {
   position: relative;
+
   font-weight: 500;
   font-size: 18px;
+
   color: #111c39;
+
   padding-left: 40px;
 }
 
 .service-title::before {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 24px;
-
   position: absolute;
   left: 0;
   top: 2px;
+
+  content: "";
+
+  display: block;
+
+  width: 24px;
+  height: 24px;
 }
 
 .service-title--consulting {
-  background-image: url("../img/service1.png");
+  background-image: url("../img/service1.svg");
+  background-repeat: no-repeat;
+}
+
+.service:hover .service-title--consulting {
+  background-image: url("../img/service1-hover.svg");
   background-repeat: no-repeat;
 }
 
@@ -505,7 +595,12 @@ a {
 }
 
 .service-title--business {
-  background-image: url("../img/service3.png");
+  background-image: url("../img/service3.svg");
+  background-repeat: no-repeat;
+}
+
+.service:hover .service-title--business {
+  background-image: url("../img/service3-hover.svg");
   background-repeat: no-repeat;
 }
 
@@ -515,12 +610,22 @@ a {
 }
 
 .service-title--planning {
-  background-image: url("../img/service5.png");
+  background-image: url("../img/service5.svg");
+  background-repeat: no-repeat;
+}
+
+.service:hover .service-title--planning {
+  background-image: url("../img/service5-hover.svg");
   background-repeat: no-repeat;
 }
 
 .service-title--analysis {
-  background-image: url("../img/service6.png");
+  background-image: url("../img/service6.svg");
+  background-repeat: no-repeat;
+}
+
+.service:hover .service-title--analysis {
+  background-image: url("../img/service6-hover.svg");
   background-repeat: no-repeat;
 }
 
@@ -543,12 +648,15 @@ a {
   background-position: center;
   background-color: #082362;
   background-repeat: no-repeat;
+
   padding: 65px 0;
 }
 
 .achievements_table {
   border-collapse: collapse;
+
   font-family: Rubik, Arial, sans-serif;
+
   color: white;
 }
 
@@ -565,6 +673,7 @@ a {
 .achievements_table tr:first-child {
   font-weight: bold;
   font-size: 48px;
+
   text-align: left;
 }
 
@@ -576,13 +685,16 @@ a {
 .achievements_table tr:nth-child(2) {
   font-weight: 500;
   font-size: 20px;
+
   color: #b4b4b4;
+
   text-align: left;
 }
 
 .achievements_table tr:last-child {
   font-weight: 400;
   font-size: 15px;
+
   color: white;
 }
 
@@ -594,10 +706,12 @@ a {
 
 .team-columns {
   padding: 80px 0 70px;
+
   display: grid;
   grid-template: "aboutteam aboutteam aboutteam aboutteam staff staff staff staff staff staff staff staff" 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
   align-items:flex-start;
+
   width: 100%;
 }
 
@@ -613,13 +727,16 @@ a {
   line-height: 24px;
   font-weight: 400;
   font-size: 14px;
+
   color: #6b6b6b;
+
   margin-bottom: 40px;
 }
 
 .staff-supply {
-  grid-area: staff;
   position: relative;
+
+  grid-area: staff;
 }
 
 .staff-list img {
@@ -634,6 +751,7 @@ a {
 
 .employee {
   position: relative;
+
   transform: scale(0.9);
   transition: transform 1s;
 }
@@ -643,10 +761,11 @@ a {
 }
 
 .employee-info {
-  width: 100%;
-  max-width: 235px;
   position: absolute;
   bottom: 35px;
+
+  width: 100%;
+  max-width: 235px;
 }
 
 .employee-info h3 {
@@ -661,7 +780,9 @@ a {
 .employee-info p {
   margin: 0;
   padding: 10px 20px;
+
   text-align: center;
+
   background-color: rgba(8, 35, 98, 0.5);
 }
 
@@ -669,6 +790,7 @@ a {
 
 .news {
   font-family: Rubik, Arial, sans-serif;
+
   background-color: #082362;
   background-image: url('../img/newsbackground.png');
   background-position: right;
@@ -676,7 +798,8 @@ a {
 }
 
 .news-header {
-  padding: 40px 0;
+  padding-top: 40px;
+
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-column-gap: 20px;
@@ -684,26 +807,36 @@ a {
 }
 
 .news-header h2 {
-  grid-column: 1 / 4;
   width: 100%;
-  position: relative;
+
+  grid-column: 1 / 4;
 }
 
-.news-header h2::after {
-  content: url(../img/white-separator.png);
+.news-header p::before {
   position: absolute;
-  right: -3px;
+  top: -5px;
+  left: -30px;
+
+  content: url(../img/white-separator.svg);
 }
 
 .news-header p {
+  position: relative;
+
   grid-column: 4/11;
+
   width: 100%;
+
   font-weight: 400;
   font-size: 14px;
+
   color: #c1c1c1;
 }
 
 .newsboard {
+  position: relative;
+  top: 70px;
+
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-column-gap: 20px;
@@ -733,24 +866,39 @@ a {
 .newscard h3 {
   font-weight: 500;
   font-size: 22px;
+
   color: #1d253b;
+
   padding-left: 40px;
+}
+
+.newscard h3:hover {
+  text-decoration: underline;
 }
 
 .newscard p {
   font-weight: 400;
   font-size: 16px;
+
   padding: 30px 40px 50px;
   margin: 0;
 }
 
 .news-to-learn-more {
-  height: 80px;
+  height: 150px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   font-size: 14px;
+
   background-color: #f5f5f5;
+}
+
+.news-to-learn-more .button-learn-more{
+  position: relative;
+  top: 35px;
 }
 
 /* happy moments */
@@ -763,7 +911,6 @@ a {
   display: grid;
   grid-template-columns: repeat(12,1fr);
   align-items: center;
-  padding-bottom: 30px;
 }
 
 .happy-moments-header h2 {
@@ -780,6 +927,7 @@ a {
   font-family: Rubik, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
+
   color: #6b6b6b;
 }
 
@@ -799,6 +947,7 @@ a {
 .happymomentsimage {
   width: 100%;
   height: auto;
+
   transition: filter 0.5s;
 }
 
@@ -829,19 +978,24 @@ a {
 .filter-list {
   display: flex;
   justify-content: flex-end;
-  padding: 40px 0;
-}
 
-.filter-list {
+  padding: 40px 0;
+
   font-family: Rubik, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
+
   color: #6b6b6b;
+
   transition: transform 1s;
 }
 
-.filter-list li:not(:last-child) {
-  padding-right: 30px;
+.filter-list li {
+  padding-left: 30px;
+}
+
+.filter-list li:hover {
+  text-decoration: underline;
 }
 
 .filter:hover {
@@ -862,6 +1016,7 @@ a {
   display: grid;
   grid-template: "peridona peridona peridona peridona resourses resourses links links subscription subscription subscription subscription" 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+
   padding: 80px 0 70px;
 }
 
@@ -891,6 +1046,7 @@ a {
 
 .footer-navigation-column:first-child p{
   line-height: 27px;
+
   padding: 0 30px 20px 0;
 }
 
@@ -901,9 +1057,11 @@ a {
 
 .footer-navigation-columns h3 {
   padding-bottom: 40px;
+
   font-family: Rubik, Arial, sans-serif;
   font-weight: 500;
   font-size: 22px;
+
   color: #fefefe;
 }
 
@@ -912,6 +1070,7 @@ a {
   font-family: Rubik, Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
+
   color: #d9d9d9;
 }
 
@@ -921,15 +1080,20 @@ a {
 
 .contact-links li {
   padding: 10px;
+
   width: 14px;
   height: 14px;
+
   text-align: center;
+
   border-radius: 50%;
+
   transition: border, background 0.5s;
 }
 
 .contact-links li:hover {
   background-color: #035B6E;
+
   border-radius: 50%;
 }
 
@@ -940,28 +1104,37 @@ a {
 
 .footer-form input {
   width: 100%;
+
   padding: 15px;
   margin-bottom: 20px;
+
   box-sizing: border-box;
-  background-color: transparent;
+
   border: none;
   border-bottom: 1px solid #a3a3a3;
+
   color: white;
+  background-color: transparent;
 }
 
 .footer-form button {
   font-family: Rubik, Arial, sans-serif;
   font-weight: 700;
   font-size: 15px;
+
   color: white;
+
   background-color: transparent;
+
   border: none;
 }
 
 .footer-form button:hover {
   border: 2px solid white;
   border-radius: 5px;
+
   cursor: pointer;
+
   background-color: rgba(255,255,255,0.2)
 }
 
@@ -972,8 +1145,10 @@ a {
 .footer-copyright p {
   margin: 0;
   padding: 30px 0;
+
   font-family: Rubik, Arial, sans-serif;
   font-weight: 400;
+
   color: #949494;
   text-align: center;
 }
