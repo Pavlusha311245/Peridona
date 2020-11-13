@@ -69,14 +69,12 @@ a {
 
   padding: 10px 20px;
 
-  transition: border,color,background 0.5s;
+  transition: color,background 0.5s;
 }
 
 .button-learn-more:hover {
   color: #0c245d;
-  background-color: white;
-
-  border: 1px solid #0c245d;
+  background-color: #36BFA9;
 }
 
 /* header */
@@ -171,6 +169,10 @@ a {
   color: #131f4f;
 }
 
+.contacts a:hover {
+  text-decoration: underline;
+}
+
 .introduction-image {
   display: block;
 
@@ -238,7 +240,6 @@ a {
   max-width: 175px;
   width: 100%;
   height: 123px;
-
 
   display: flex;
   align-items: center;
@@ -370,10 +371,12 @@ a {
   background-color: #ffffff;
 
   cursor: pointer;
+
+  transition: background 0.5s;
 }
 
 .connect_form button:hover {
-  border: 3px solid black;
+  background-color: #36BFA9;
 }
 
 .connect_form button:active {
@@ -500,6 +503,14 @@ a {
   align-items: center;
 }
 
+.services-header-text {
+  width: 100%;
+
+  grid-column: 5/13;
+
+  padding-left: 10px;
+}
+
 .services-header h2 {
   width: 320px;
 
@@ -516,12 +527,6 @@ a {
 
 .services-header p{
   line-height: 24px;
-
-  display: block;
-
-  width: 100%;
-
-  grid-column: 5/13;
 
   position: relative;
 }
@@ -806,6 +811,12 @@ a {
   align-items: center;
 }
 
+.news-header-text {
+  grid-column: 4/11;
+
+  width: 100%;
+}
+
 .news-header h2 {
   width: 100%;
 
@@ -822,10 +833,6 @@ a {
 
 .news-header p {
   position: relative;
-
-  grid-column: 4/11;
-
-  width: 100%;
 
   font-weight: 400;
   font-size: 14px;
